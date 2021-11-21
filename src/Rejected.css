@@ -1,0 +1,33 @@
+.rejected{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.error button{
+    cursor: pointer;
+    color: white;
+    background-color: #0066ff;
+    border: solid;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .rejected{
+        flex-direction: column;
+    }
+
+}

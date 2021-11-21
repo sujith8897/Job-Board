@@ -1,0 +1,245 @@
+.hero{
+    margin-top: 130px;
+    text-align: center;
+    width: 100%;
+}
+
+.hero h1{
+    line-height: 20px;
+    word-spacing: 0.1px;
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.hero h2{
+    font-size: 16px;
+}
+
+.hero img{
+    width: 30px;
+    height: 30px;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.users{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid gray;
+    text-align: center;
+    margin: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin: 30px;
+    margin-bottom: 80px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    opacity: 1;
+}
+
+/* .profile img:hover{
+    opacity: 0.9;
+} */
+
+.profile:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.names{
+    color: transparent;
+}
+
+.names p{
+    text-decoration: none !important;
+    color: black;
+    font-weight: bold;
+}
+
+.names button{
+    cursor: pointer;
+    color: white;
+    background-color: #0066ff;
+    border: solid;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.info{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    margin-top: -4px;
+}
+
+.dp{
+    display: flex;
+    margin: 10px 0;
+}
+
+.dp img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px 10px;
+    border: 1px solid black;
+}
+
+.infoProfile{
+    width: 100%;
+    text-align: left;
+}
+
+.descp{
+    text-decoration: none;
+    color: transparent;
+    font-size: 10px;
+    margin-top: -10px;
+    background-color: #c2c4c7;
+    animation: linear 1s placeHolderShimmer infinite;
+	background: #f6f7f8;
+	background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+	background-size: 800px 104px;
+    width: 80%;
+    border-radius: 4px;
+    height: 8px;
+    margin-bottom: 15px;
+    animation: linear 1.5s placeHolderShimmer infinite;
+}
+
+.descp2{
+    width: 65%;
+}
+
+.descp3{
+    width: 50%;
+}
+
+.nameVerified{
+    display: flex;
+}
+
+#verified{
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-top: 15px;
+    margin-left: 4px;
+
+}
+
+.profileLink{
+    text-decoration: none;
+}
+
+.dpOnline{
+    position: relative;
+}
+#online{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 18px;
+    right:6px;
+}
+
+.faq{
+    display: flex;
+}
+
+.searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.searchBox input{
+    border: 0.1px solid black;
+    border-radius: 3px;
+    height: 25px;
+    width: 20%;
+    text-indent: 10px;
+}
+
+#noSearchUser{
+    display: none;
+    text-align: center;
+}
+
+@keyframes placeHolderShimmer {
+	0% {
+		background-position: -468px 0;
+	}
+	100% {
+		background-position: 468px 0;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .names p{
+        font-size: 18px;
+    }
+
+    .names button{
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    #verified{
+        width: 20px;
+        height: 20px;
+    }
+
+    img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #online{
+        bottom: 24px;
+    }
+
+    .hero h1{
+        line-height: 45px;
+    }
+
+    .hero h2{
+        font-size: 20px;
+        padding: 0 20px;
+        margin-top: -10px;
+    }
+
+    .searchBox input{
+        width: 50%;
+    }
+
+}
